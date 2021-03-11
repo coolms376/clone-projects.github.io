@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+
+    <title>Document</title>
+</head>
+<body>
+
+    <video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="640"
+    height="264"
+    poster="MY_VIDEO_POSTER.jpg"
+    data-setup="{}"
+  >
+    <source src="https://file122.iijj.nl/?file=M3R4SUNiN3JsOHJ6WWQ2a3NQS1Y5ZGlxVlZIOCtyZ0duZGsyeGxzQUNLcEQ3Y1lEMXErREl0cE9aYU1LaHJxakFkdFl5aWlQSTRDN2ZnS1o0dDRnUzMrRXlNWThyVGVTdHR3R1FNWmtRZ1A2bnFQeHNEeG0zVUtuV0krSVI1NVBQM3A2dDBVdDBDbWVoN3lmdXhEMHYzeVNwRVNDWXhzR3N3UUlQT2JSenB0TjZubktmL0xvN01rRW9uSzV4NXR0L2Zpc2kxYWtrNkp3dGN3aEdFTnhmTTEwOTl6d3grREZ0MElOaVpRWmh4enkrTGJ5VmMxdFNmUFlhajVxTzM5WXVMaTREazFPbDJNTjdqR3Q0UG89" type="video/mp4" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+   
+    
+
+
+
+  
+
+   
+    <script>
+    let player = videojs('my-video', {
+      controlBar: {
+        volumePanel: {
+          inline: false
+        }
+      }
+    });</script>
+     <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+</body>
+</html>

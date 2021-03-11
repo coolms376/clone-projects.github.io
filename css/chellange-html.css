@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0%;
+}
+
+.container {
+  margin: 0 20px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  padding: 0 5px;
+  list-style: none;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.aside-content {
+  width: 30%;
+  float: right;
+  background-color: grey;
+  overflow-y: scroll;
+}
+
+.aside-content ul li {
+  padding: 4px 0px;
+}
+
+.container-70 {
+  width: 70%;
+}
+
+.main-menu {
+  border-bottom: 5px solid black;
+}
+
+.right {
+  float: right;
+}
+
+.footer-menu {
+  color: white;
+}
+
+.footer-menu ul li {
+  list-style: none;
+}
+
+footer {
+  padding: 4% 0%;
+}
+
+footer img {
+  width: 50%;
+}
+
+footer ul {
+  padding: 0 4em;
+}
+
+footer ul li {
+  padding: 0.5em 0.5em;
+}
+
+.footer-bg {
+  background-color: #004274;
+}
+/*# sourceMappingURL=chellange-html.css.map */

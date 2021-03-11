@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//vjs.zencdn.net/7.10.2/video-js.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbackcolor">
+        <div class="bars">
+            <input type="checkbox" name="menutoggle" id="menutoggle">
+            <label for="menutoggle"><i class="fa fa-bars fa-4" aria-hidden="true"></i></label>
+        </div>
+        <img src="https://static-entertainment-eas-s-msn-com.akamaized.net/sc/e3/ca32b5.svg">
+        <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Contact us</li>
+        </ul>
+    </nav>
+
+    <section class=" container main">
+        <br><br><br><br><br><br>
+        <form action="">
+
+            
+            <label for="name" id='labelName'>Enter Your Name</label>
+            <input type="text"  id="name" />
+            <br>
+
+            <label for="email" id='labelName'>Enter Your Email</label>
+            <input type="email"  id="email" />
+            <br>
+            
+        </form>
+
+    </section>
+
+<div class="cards ">
+
+    <div class="card">
+        <div class="title">
+            <h2>Card title</h2>
+        </div>
+        <div class="description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus alias aperiam beatae fugit labore</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="title">
+            <h2>Card title</h2>
+        </div>
+        <div class="description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus alias aperiam beatae fugit labore</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="title">
+            <h2>Card title</h2>
+        </div>
+        <div class="description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus alias aperiam beatae fugit labore</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="title">
+            <h2>Card title</h2>
+        </div>
+        <div class="description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus alias aperiam beatae fugit labore</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="title">
+            <h2>Card title</h2>
+        </div>
+        <div class="description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus alias aperiam beatae fugit labore</p>
+        </div>
+    </div>
+
+</div>
+<script>
+    var input = document.getElementsByTagName("name");
+    var label = document.getElementsByTagName("labelName");
+
+    
+    input.addEventListener('focus',
+    function(){if(label.classList.contains("label") == false && input.value == "" ){ label.classList.add("label")
+    input.classList.add("border-input")}})
+    input.addEventListener('focusout',
+    function(){if( label.classList.contains("label") == true && input.value == "" ){label.classList.remove("label");input.classList.remove("border-input")}})
+</script>
+</body>
+</html>

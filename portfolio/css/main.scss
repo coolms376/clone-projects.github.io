@@ -1,29 +1,58 @@
-:root{
-
-}
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oi&family=Redressed&family=Niconne&display=swap');
 
 *{
     margin:0;
     font-family: "Poppins";
     scroll-behavior: smooth;
+    box-sizing: border-box;
+
+    ul{
+        list-style: none;
+
+        li{
+            text-decoration: none;
+        }
+    }
+
+    :after,:before{
+        box-sizing: border-box;
+    }
+
 }
 
 .container{
     margin:0 5%;
 }
+
 .main{
     // background: url("https://images.unsplash.com/photo-1514064019862-23e2a332a6a6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=916&q=80");
     height: 100Vh;
     display: grid;
     grid-template-rows: 1fr 4fr;
+
+    &:after{
+        content:"";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background-color: darken(aqua,15%);
+        opacity:0.2;
+        clip-path: polygon(100% 0 0 0);
+        z-index: -1;
+    }
+
+    
+   
     header{ 
         padding:1em;
        nav{
         display: flex;
 
         a{
-           
+            text-decoration: none;
             width:30%
         }
         aspan:before{
@@ -39,16 +68,15 @@
             justify-content: center;
             justify-content:space-between ;
             li{
-                padding: 0 4px;
+                a{
+                    text-decoration: none;
+                }
+               
             }
             list-style: none;    
         }
         
        }
-
-
-
-       
 
     }
 
@@ -86,8 +114,13 @@
                 font-size: 2em;
             }
         }
-    }  
+    } 
 }
+
+
+
+
+
 
 #about:active{
     
@@ -95,9 +128,148 @@
 }
 
 .about{
-
     img{
         width:50%;
     }
-
 }
+
+footer{
+    background-color: darken(aqua, 40);
+    font-family: 'Redressed', cursive;
+    padding: 4em 0px;
+    color: white;
+    a{
+        color: white;
+    }
+
+    ul{
+        padding: 0;
+        li:nth-child(2):before {
+            content: " ● ";
+            padding:0 10px;
+            
+        }
+        li:nth-child(2):after {
+            content: " ● ";
+            padding:0 10px;
+            
+          }
+        
+    }
+    p{
+        padding: 1em 0;
+        font-size: 14px;
+    }
+    a{
+        text-decoration:none;
+        h4{
+            text-transform: capitalize;
+            font-size: 3rem;
+            font-family: Niconne;
+        }
+    }   
+
+    .contact{
+        margin:auto  auto 20% auto;
+        div{
+            padding: 0.6em 0px;
+        }
+    }
+    .context-menu{
+        padding: 3em 0px 0px;
+    }
+
+    .grid{
+        display:grid;
+        grid-template-columns: 2fr 4fr 3fr;
+        grid-gap: 2px;
+    }
+    .copyright{
+        padding:1em 0;
+    }
+    
+}
+
+
+.flex{
+    display:flex;
+}
+
+
+.footer-social {
+    width: 100%;
+    padding:0; 
+}
+
+.list-style-flex{
+    width:100%;
+    justify-content: space-around;
+    li{
+        list-style: none;
+
+        a:before{ 
+            content: "";
+            transition: .2s;
+            position: absolute;
+            top: calc(100% - 1px);
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: #fff;
+            transform: translateX(-101%);
+        }
+    
+    }
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+    
+
+
+@media only screen and (max-width:600px){
+    .main{
+        header{
+            nav{
+                ul{
+                    display: hidden;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:850px){
+    footer{
+        .grid{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            overflow: hidden;
+        }
+        
+        .about{
+            visibility: collapse;
+        }
+    }
+}
+
+@media only screen and (max-width:650px){
+    footer{
+        .grid{
+           display: flex;
+           flex-direction: column-reverse;
+        }
+        .contact{
+            padding: 0px 0 3em 0;
+            margin:0;
+        }
+        
+        .about{
+            display: none;
+        }
+    }
+}
+

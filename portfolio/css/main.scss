@@ -51,6 +51,17 @@
        nav{
         display: flex;
 
+        .brand-logo{
+            h4{
+                text-transform: capitalize;
+                font-size: 1.6rem;
+                font-family: Niconne;
+                letter-spacing:2px;
+                color:white;
+            }
+            
+        }
+
         a{
             text-decoration: none;
             width:30%
@@ -128,9 +139,7 @@
 }
 
 .about{
-    img{
-        width:50%;
-    }
+    
 }
 
 footer{

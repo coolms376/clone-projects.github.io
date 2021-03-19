@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -14,7 +15,19 @@
 
         <header id="#nav" class="container">
             <nav>
-                <a href="#" class="brand-logo"><span></span>Montu<img src=""></a>
+                <span style="background-color: #5fedff;
+                    z-index: -1;
+                    position: relative;
+                    border-radius: 50%;
+                    /* border: 1px solid white; */
+                    right: -35px;
+                    top: -10px;
+                    width: 44px;
+                    height: 44px;"></span>
+               
+                <a href="#" class="brand-logo">
+                    
+                    <h4>Montu</h4></a>
                 <ul class="">
                     <li>Home</li>
                     <li><a href="#about">About</a></li>
@@ -30,7 +43,7 @@
         <div>
             <h3>Hey I am</h3>
             <p class="dev-name">Montu Sharma</p>
-            <p class="dev-description">I'm a <span>Developer</span></p>
+            <p class="dev-description">I'm a <span id="steps">Developer</span></p>
             <span class="down"><a href="#about">&darr;</a></span>
         </div>
 
@@ -96,6 +109,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"  crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
     
 </body>
 </html>
